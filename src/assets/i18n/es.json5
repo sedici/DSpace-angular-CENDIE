@@ -10835,16 +10835,13 @@
   "search.filters.filter.notifyEndorsement.label": "Buscar por notificación de aprobación",
 
   // "form.date-picker.placeholder.year": "Year",
-  // TODO New key - Add a translation
-  "form.date-picker.placeholder.year": "Year",
+  "form.date-picker.placeholder.year": "Año",
 
   // "form.date-picker.placeholder.month": "Month",
-  // TODO New key - Add a translation
-  "form.date-picker.placeholder.month": "Month",
+  "form.date-picker.placeholder.month": "Mes",
 
   // "form.date-picker.placeholder.day": "Day",
-  // TODO New key - Add a translation
-  "form.date-picker.placeholder.day": "Day",
+  "form.date-picker.placeholder.day": "Día",
 
   // "item.page.cc.license.title": "Creative Commons license",
   "item.page.cc.license.title": "Licencia Creative Commons",
