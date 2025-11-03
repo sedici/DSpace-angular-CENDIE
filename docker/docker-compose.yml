@@ -13,7 +13,7 @@ networks:
   dspacenet:
 services:
   dspace-angular:
-    container_name: dspace-angular
+    container_name: dspace-angular_${COMPOSE_PROJECT_NAME}
     environment:
       DSPACE_UI_SSL: 'false'
       DSPACE_UI_HOST: dspace-angular
