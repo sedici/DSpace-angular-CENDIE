@@ -13,13 +13,15 @@ import { StoreModule } from '@ngrx/store';
 import { TranslateModule } from '@ngx-translate/core';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 
+import { TypeBadgeComponent } from './app/shared/object-collection/shared/badges/type-badge/type-badge.component';
+
 import { RootModule } from '../../app/root.module';
 
 const DECLARATIONS = [
+  TypeBadgeComponent,
 ];
 
 @NgModule({
-  declarations: DECLARATIONS,
   imports: [
     RootModule,
     CommonModule,
@@ -32,7 +34,7 @@ const DECLARATIONS = [
     StoreRouterConnectingModule,
     TranslateModule,
     FormsModule,
-  ],
+    ...DECLARATIONS],
   providers: [
     provideHttpClient(withInterceptorsFromDi()),
   ],
