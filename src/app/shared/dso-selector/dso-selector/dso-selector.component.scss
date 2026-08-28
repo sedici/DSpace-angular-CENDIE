@@ -3,3 +3,11 @@
   max-height: var(--ds-dso-selector-list-max-height);
   overflow-x: hidden;
 }
+
+.list-group-item-action:not(.active):hover {
+  background-color: var(--list-group-item-action-not-active-hover-background-color);
+}
+
+.list-group-item-action:not(.active):focus {
+  background-color: var(--list-group-item-action-not-active-focus-background-color);
+}

@@ -28,5 +28,7 @@
 
   /*** CUSTOM CENDIE VARIABLES ***/
   --provincia-color: #{$provincia-color} !important;
+  --list-group-item-action-not-active-hover-background-color: #{$gray-400} !important;
+  --list-group-item-action-not-active-focus-background-color: #{$gray-400} !important;
 }
 
