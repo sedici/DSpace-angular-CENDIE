@@ -29,12 +29,10 @@
           <a [target]="(linkType === linkTypes.ExternalLink) ? '_blank' : '_self'" [attr.rel]="(linkType === linkTypes.ExternalLink) ? 'noopener noreferrer' : null"
             [routerLink]="[itemPageRoute]" class="lead item-list-title dont-break-out" role="link" tabindex="0">
             <span [innerHTML]="dsoTitle"></span>
-            @if (dso.firstMetadataValue('dc.title.subtitle')) {
-              <span class="subtitle">
-                . <span [innerHTML]="firstMetadataValue('dc.title.subtitle')"></span>
-              </span>
-            }
           </a>
+          @if (dso.firstMetadataValue('dc.title.subtitle')) {
+            <p class="subtitle" [innerHTML]="firstMetadataValue('dc.title.subtitle')"></p>
+          }
         }
         @if (linkType === linkTypes.None) {
           <span class="lead item-list-title dont-break-out"
