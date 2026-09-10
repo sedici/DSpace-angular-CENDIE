@@ -13,11 +13,15 @@ import { StoreModule } from '@ngrx/store';
 import { TranslateModule } from '@ngx-translate/core';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 
+import { HomePageComponent } from './app/home-page/home-page.component';
+import { RootComponent } from './app/root/root.component';
 import { TypeBadgeComponent } from './app/shared/object-collection/shared/badges/type-badge/type-badge.component';
 
 import { RootModule } from '../../app/root.module';
 
 const DECLARATIONS = [
+  HomePageComponent,
+  RootComponent,
   TypeBadgeComponent,
 ];
 
