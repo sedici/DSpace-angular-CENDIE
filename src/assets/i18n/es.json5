@@ -11093,4 +11093,19 @@
   "file-download-link.request-copy": "Request a copy of ",
 
 
+
+  ///// TRADUCCIONES CENDIE
+  
+  ///// Header
+  
+  "menu.section.explore": "Explorar",
+  "menu.section.browse_global_by_VEA_Hierarchical_Provider": "Por VEA",
+  "menu.section.institutional": "Institucional",
+  "menu.section.institutional_about": "Acerca de",
+  "menu.section.institutional_policy": "Política institucional",
+
+  ///// Home Banner
+  
+  // "home.search-form.placeholder": "Search the repository ...",
+  "home.search-form.placeholder": "Búsqueda en ABC Digital...",
 }
