@@ -34,7 +34,6 @@
     nav#desktop-navbar { // in header component
       #main-site-navigation {
         /* Desktop menu */
-        text-transform: uppercase;
 
         .ds-menu-item-wrapper, .ds-menu-item, .ds-menu-toggler-wrapper {
           // fill navbar height (required by dropdown menus) and center content
@@ -47,10 +46,7 @@
           padding: var(--ds-navbar-item-vertical-padding) var(--ds-navbar-item-horizontal-padding);
         }
         .ds-menu-item, .ds-menu-toggler-wrapper {
-          color: var(--ds-navbar-link-color) !important;
-          &:hover, &:focus {
-            color: var(--ds-navbar-link-color-hover) !important;
-          }
+          color: white !important;
         }
 
         /* desktop submenu */
@@ -59,6 +55,10 @@
           .ds-menu-item {
             // define here the style for second-level navbar menu items
             padding: var(--ds-navbar-dropdown-item-vertical-padding) var(--ds-navbar-dropdown-item-horizontal-padding);
+            color: var(--ds-navbar-link-color) !important;
+            &:hover, &:focus {
+              color: var(--ds-navbar-link-color-hover) !important;
+            }
           }
         }
 
@@ -71,7 +71,6 @@
       padding-top: var(--ds-expandable-navbar-padding-top);
 
       #main-site-navigation {
-        text-transform: uppercase;
         .ds-menu-item {
           padding: var(--ds-expandable-navbar-item-vertical-padding) 0;
         }

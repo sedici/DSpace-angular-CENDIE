@@ -6,23 +6,39 @@
       height: var(--ds-header-height);
     }
 
-    background-color: var(--ds-header-bg);
+    background-color: var(--provincia-color);
 
     &-container {
+      max-width: 1300px;
+      margin: 0 auto;
       min-height: var(--ds-header-height);
     }
   }
 
   img#header-logo {
     height: var(--ds-header-logo-height);
-    background-color: #14b1c5;
+
+    @include media-breakpoint-up(md) {
+      padding: 0.5rem 0;
+    }
   }
 
   button#navbar-toggler {
-    color: var(--ds-header-icon-color);
+    color: #ffffff;
+  }
 
-    &:hover, &:focus {
-      color: var(--ds-header-icon-color-hover);
+  ::ng-deep {
+    .dropdownLogin, .dropdownLogout {
+      color: #ffffff !important;
+
+      &:focus:not(:focus-visible) {
+        outline: none !important;
+      }
+
+      &:focus-visible {
+        outline: 2px solid;
+        outline-offset: 2px;
+      }
     }
   }
 

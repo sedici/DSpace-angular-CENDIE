@@ -8,6 +8,9 @@ import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
 import { TranslateModule } from '@ngx-translate/core';
 import { Observable } from 'rxjs';
 import { ThemedLangSwitchComponent } from 'src/app/shared/lang-switch/themed-lang-switch.component';
+import { AuthService } from 'src/app/core/auth/auth.service';
+import { MenuService } from 'src/app/shared/menu/menu.service';
+import { HostWindowService } from 'src/app/shared/host-window.service';
 
 import { ContextHelpToggleComponent } from '../../../../app/header/context-help-toggle/context-help-toggle.component';
 import { HeaderComponent as BaseComponent } from '../../../../app/header/header.component';
@@ -40,8 +43,20 @@ import { ImpersonateNavbarComponent } from '../../../../app/shared/impersonate-n
 export class HeaderComponent extends BaseComponent implements OnInit {
   public isNavBarCollapsed$: Observable<boolean>;
 
+  constructor(
+    private authService: AuthService,
+    protected menuService: MenuService,
+    protected windowService: HostWindowService
+  ) {
+    super(menuService, windowService);
+  }
+
   ngOnInit() {
     super.ngOnInit();
     this.isNavBarCollapsed$ = this.menuService.isMenuCollapsed(this.menuID);
+  }
+
+  isAuthenticatedUser(): Observable<boolean> {
+    return this.authService.isAuthenticated();
   }
 }
