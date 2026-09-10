@@ -1,0 +1,52 @@
+<footer class="custom-footer">
+  <div class="custom-footer__container">
+    
+    <!-- Bloque 1: Logo CENDIE -->
+    <div class="custom-footer__logo__cendie">
+      <img src="assets/dspace/images/logo-cendie.svg" alt="Logo CENDIE">
+    </div>
+
+    <!-- Bloque 2: Navegación -->
+    <div class="custom-footer__nav">
+      <a class="nav-link" href="/community-list"><i class="fas fa-sitemap fa-fw"></i> Comunidades</a>
+      <a class="nav-link" href="/institutional/about"><i class="fas fa-info-circle fa-fw"></i> Acerca de</a>
+      <a class="nav-link" href="/institutional/policy"><i class="fas fa-landmark fa-fw"></i> Política institucional</a>
+      @if ((isAuthenticatedUser() | async) !== true) {
+        <a class="nav-link" href="/login"><i class="fas fa-sign-in-alt fa-fw"></i> Iniciar sesión</a>
+      }
+    </div>
+
+    <!-- Bloque 3: Redes Sociales -->
+    <div class="custom-footer__social">
+      <a class="social-link" href="mailto:dep-informacion@abc.gob.ar"><i class="far fa-envelope"></i></a>
+      <a class="social-link" href="https://www.instagram.com/baeducacion/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a class="social-link" href="https://www.facebook.com/baeducacion/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    </div>
+
+    <!-- Bloque 4: Logo Provincia -->
+    <div class="custom-footer__logo__provincia">
+      <img src="assets/dspace/images/logo-provincia.svg" alt="Gobierno de la Provincia de Buenos Aires">
+    </div>
+
+    <!-- Bloque 5: Contacto -->
+    <div class="custom-footer__contact">
+      <h4>CONTACTO</h4>
+      <a href="mailto:dep-informacion@abc.gob.ar">dep-informacion&#64;abc.gob.ar</a>
+      <p>Diagonal 73 1910</p>
+      <p>La Plata, Provincia de Buenos Aires</p>
+    </div>
+
+  </div>
+</footer>
+
+<div class="post-footer">
+  <div class="post-footer__spacer"></div>
+  
+  <div class="post-footer__text">
+    Sitio desarrollado en colaboración entre el <strong>CENDIE</strong> y el repositorio <strong>SEDICI de la UNLP</strong>
+  </div>
+  
+  <div class="post-footer__logo">
+    <img src="assets/dspace/images/logo-sedici.svg" alt="Logo SEDICI">
+  </div>
+</div>

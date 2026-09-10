@@ -1,0 +1,146 @@
+.custom-footer {
+  background-color: var(--provincia-color);
+  color: #ffffff;
+  padding: 2.5rem 1rem;
+
+  &__logo {
+    img {
+      display: block;
+      object-fit: contain;
+    }
+
+    &__cendie {
+      img {
+        height: 100px;
+      }
+    }
+
+    &__provincia {
+      img {
+        height: 60px;
+      }
+    }
+  }
+  
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+
+    .nav-link {
+      color: #ffffff;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 1rem;
+
+      &:hover, &:focus {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__social {
+    display: flex;
+    gap: 0.8rem;
+
+    .social-link {
+      color: #ffffff;
+      text-decoration: none;
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      border-radius: 8px;
+      width: 42px;
+      height: 42px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.2rem;
+      transition: background-color 0.2s ease;
+
+      &:hover, &:focus {
+        cursor: pointer;
+        background-color: rgba(255, 255, 255, 0.15);
+      }
+    }
+  }
+
+  &__contact {
+    h4 {
+      font-weight: 700;
+      margin: 0;
+      font-size: 1rem;
+      letter-spacing: 0.5px;
+    }
+
+    p, a {
+      color: #ffffff;
+      margin: 0;
+      line-height: 1.5;
+      text-decoration: none;
+      display: block;
+      font-size: 0.9rem;
+    }
+
+    a:hover, a:focus {
+      text-decoration: underline;
+    }
+  }
+}
+
+.post-footer {
+  background-color: #007786;
+  color: #ffffff;
+  display: grid;
+  // En móviles: 1 columna. En escritorio: 3 columnas (contrapeso, texto, logo)
+  grid-template-columns: 1fr;
+  align-items: center;
+  padding: 1rem;
+  width: 100%;
+  gap: 1rem;
+
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr auto 1fr;
+    gap: 0;
+  }
+
+  &__spacer {
+    display: none;
+    @media (min-width: 768px) {
+      display: block;
+    }
+  }
+
+  &__text {
+    text-align: center;
+    font-size: 0.85rem;
+    line-height: 1.4;
+
+    strong {
+      font-weight: 700;
+    }
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      max-height: 35px;
+      object-fit: contain;
+      display: block;
+    }
+  }
+}
