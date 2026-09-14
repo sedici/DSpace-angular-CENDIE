@@ -14,6 +14,7 @@ import {
   FORGOT_PASSWORD_PATH,
   HEALTH_PAGE_PATH,
   INFO_MODULE_PATH,
+  INSTITUTIONAL_MODULE_PATH,
   INTERNAL_SERVER_ERROR,
   LEGACY_BITSTREAM_MODULE_PATH,
   PROFILE_MODULE_PATH,
@@ -237,6 +238,11 @@ export const APP_ROUTES: Route[] = [
       {
         path: INFO_MODULE_PATH,
         loadChildren: () => import('./info/info-routes').then((m) => m.ROUTES),
+      },
+      {
+        path: INSTITUTIONAL_MODULE_PATH,
+        loadChildren: () => import('./institutional/institutional-routes')
+          .then((m) => m.ROUTES),
       },
       {
         path: REQUEST_COPY_MODULE_PATH,

@@ -137,6 +137,11 @@ export function getInfoModulePath() {
   return `/${INFO_MODULE_PATH}`;
 }
 
+export const INSTITUTIONAL_MODULE_PATH = 'institutional';
+export function getInstitutionalModulePath() {
+  return `/${INSTITUTIONAL_MODULE_PATH}`;
+}
+
 export const ACCESS_CONTROL_MODULE_PATH = 'access-control';
 
 export function getAccessControlModuleRoute() {
