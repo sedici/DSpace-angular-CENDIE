@@ -8,11 +8,22 @@
 
     <!-- Bloque 2: Navegación -->
     <div class="custom-footer__nav">
-      <a class="nav-link" href="/community-list"><i class="fas fa-sitemap fa-fw"></i> Comunidades</a>
-      <a class="nav-link" href="/institutional/about"><i class="fas fa-info-circle fa-fw"></i> Acerca de</a>
-      <a class="nav-link" href="/institutional/policy"><i class="fas fa-landmark fa-fw"></i> Política institucional</a>
+      <a class="nav-link" [routerLink]="'/community-list'">
+        <i class="fas fa-sitemap fa-fw"></i> Comunidades
+      </a>
+
+      <a class="nav-link" [routerLink]="'/institutional/about'">
+        <i class="fas fa-info-circle fa-fw"></i> Acerca de
+      </a>
+
+      <a class="nav-link" [routerLink]="'/institutional/policy'">
+        <i class="fas fa-landmark fa-fw"></i> Política institucional
+      </a>
+
       @if ((isAuthenticatedUser() | async) !== true) {
-        <a class="nav-link" href="/login"><i class="fas fa-sign-in-alt fa-fw"></i> Iniciar sesión</a>
+        <a class="nav-link" [routerLink]="'/login'">
+          <i class="fas fa-sign-in-alt fa-fw"></i> Iniciar sesión
+        </a>
       }
     </div>
 
