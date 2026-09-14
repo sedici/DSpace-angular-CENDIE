@@ -11094,7 +11094,7 @@
 
 
 
-  ///// TRADUCCIONES CENDIE
+  // * TRADUCCIONES CENDIE * //
   
   ///// Header
   
@@ -11104,8 +11104,30 @@
   "menu.section.institutional_about": "Acerca de",
   "menu.section.institutional_policy": "Política institucional",
 
+
+  ///// Institutional
+
+  // "institutional.about.breadcrumbs": "About",
+  "institutional.about.breadcrumbs": "Acerca de",
+
+  // "institutional.about.title": "About",
+  "institutional.about.title": "Acerca de",
+
+  // "institutional.policy.breadcrumbs": "Policy",
+  "institutional.policy.breadcrumbs": "Política institucional",
+
+  // "institutional.policy.title": "Policy",
+  "institutional.policy.title": "Política institucional",
+
+
   ///// Home Banner
   
   // "home.search-form.placeholder": "Search the repository ...",
   "home.search-form.placeholder": "Búsqueda en ABC Digital...",
+
+
+  ///// Browse
+
+  "browse.comcol.by.VEA_Hierarchical_Provider": "Por VEA",
+  "browse.metadata.VEA_Hierarchical_Provider.tree.description": "Seleccione una palabra del vocabulario para añadir como filtro de búsqueda",
 }
