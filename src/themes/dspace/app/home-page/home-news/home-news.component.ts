@@ -55,9 +55,9 @@ export class HomeNewsComponent extends BaseComponent implements OnInit {
       uuid: "94d1f613-8f94-4c8d-8163-8afd00a543a3",
     } as CardItem,
     {
-      title: "IMAGOTECA",
-      href: "/handle/123456789/979",
-      uuid: "42495fde-e915-4d14-9b44-74aea2c5d044",
+      title: "ARCHIVO HISTÓRICO",
+      href: "/handle/123456789/68",
+      uuid: "cfc9cfc5-0e77-43f0-aaa5-fc04232c92a7",
     } as CardItem,
     {
       title: "DESTACADOS",
