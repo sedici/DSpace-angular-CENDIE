@@ -11126,8 +11126,25 @@
   "home.search-form.placeholder": "Búsqueda en ABC Digital...",
 
 
+  ///// Vista del ítem
+
+  // "item.page.publisher": "Publisher",
+  "item.page.publisher": "Editorial",
+
+  "item.page.contributor-director": "Director general",
+  "item.page.education-level": "Nivel educativo",
+  "item.page.coverage": "Alcance",
+  "item.page.description-note": "Notas",
+  "item.page.identifier-normativa": "Identificador de normativa",
+  "item.page.ispartof": "Es parte de",
+  "item.page.is-related-with": "Se relaciona con",
+  "item.page.external": "URL externa",
+
+
   ///// Browse
 
+  "browse.metadata.VEA_Hierarchical_Provider.breadcrumbs": "VEA",
+  "browse.metadata.VEA_Hierarchical_Provider": "VEA", 
   "browse.comcol.by.VEA_Hierarchical_Provider": "Por VEA",
   "browse.metadata.VEA_Hierarchical_Provider.tree.description": "Seleccione una palabra del vocabulario para añadir como filtro de búsqueda",
 }
