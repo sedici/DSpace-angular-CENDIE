@@ -27,6 +27,7 @@ import { MetadataFieldWrapperComponent } from '../../../../../../../app/shared/m
 import { listableObjectComponent } from '../../../../../../../app/shared/object-collection/shared/listable-object/listable-object.decorator';
 import { ThemedResultsBackButtonComponent } from '../../../../../../../app/shared/results-back-button/themed-results-back-button.component';
 import { ThemedThumbnailComponent } from '../../../../../../../app/thumbnail/themed-thumbnail.component';
+import { ThemedTypeBadgeComponent } from 'src/app/shared/object-collection/shared/badges/type-badge/themed-type-badge.component';
 
 @listableObjectComponent(Item, ViewMode.StandalonePage, Context.Any, 'dspace')
 @Component({
@@ -59,6 +60,7 @@ import { ThemedThumbnailComponent } from '../../../../../../../app/thumbnail/the
     ThemedMetadataRepresentationListComponent,
     ThemedResultsBackButtonComponent,
     ThemedThumbnailComponent,
+    ThemedTypeBadgeComponent,
     TranslateModule,
   ],
 })

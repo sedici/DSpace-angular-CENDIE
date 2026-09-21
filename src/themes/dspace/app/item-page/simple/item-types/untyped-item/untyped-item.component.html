@@ -12,7 +12,9 @@
     </div>
   </div>
 }
-
+<div>
+  <ds-type-badge [object]="object"></ds-type-badge>
+</div>
 <div class="d-flex flex-row">
   <ds-item-page-title-field [item]="object" class="me-auto">
   </ds-item-page-title-field>
@@ -40,68 +42,56 @@
       [label]="'item.page.authors' | translate">
     </ds-metadata-representation-list>
     <ds-generic-item-page-field [item]="object"
-      [fields]="['journal.title']"
-      [label]="'item.page.journal-title'">
-    </ds-generic-item-page-field>
-    <ds-generic-item-page-field [item]="object"
-      [fields]="['journal.identifier.issn']"
-      [label]="'item.page.journal-issn'">
-    </ds-generic-item-page-field>
-    <ds-generic-item-page-field [item]="object"
-      [fields]="['journalvolume.identifier.name']"
-      [label]="'item.page.volume-title'">
+      [fields]="['cendie.contributor.director']"
+      [label]="'item.page.contributor-director'">
     </ds-generic-item-page-field>
     <ds-generic-item-page-field [item]="object"
       [fields]="['dc.publisher']"
       [label]="'item.page.publisher'">
     </ds-generic-item-page-field>
+    <ds-generic-item-page-field [item]="object"
+      [fields]="['dc.audience.educationLevel']"
+      [label]="'item.page.education-level'">
+    </ds-generic-item-page-field>
+    <ds-generic-item-page-field [item]="object"
+      [fields]="['dc.coverage']"
+      [label]="'item.page.coverage'">
+    </ds-generic-item-page-field>
   </div>
-  <div class="col-xs-12 col-md-6">
+
+  <div class="col-xs-12 col-md-8">
     <ds-item-page-abstract-field [item]="object"></ds-item-page-abstract-field>
     <ds-generic-item-page-field [item]="object"
-      [fields]="['dc.description']"
-      [label]="'item.page.description'">
+      [fields]="['dc.description.note']"
+      [label]="'item.page.description-note'">
     </ds-generic-item-page-field>
-
     <ds-generic-item-page-field [item]="object"
       [fields]="['dc.subject']"
       [separator]="', '"
       [label]="'item.page.subject'">
     </ds-generic-item-page-field>
-    <ds-generic-item-page-field [item]="object"
-      [fields]="['dc.identifier.citation']"
-      [label]="'item.page.citation'">
-    </ds-generic-item-page-field>
-    @if (geospatialItemPageFieldsEnabled) {
-      <ds-geospatial-item-page-field [item]="object"
-                                     [label]="'item.page.places'"
-                                     [pointFields]="['dcterms.spatial']"
-                                     [bboxFields]="['dcterms.spatial']"
-                                     [cluster]="true"
-      >
-      </ds-geospatial-item-page-field>
-    }
     <ds-item-page-uri-field [item]="object"
       [fields]="['dc.identifier.uri']"
       [label]="'item.page.uri'">
     </ds-item-page-uri-field>
+    <ds-generic-item-page-field [item]="object"
+      [fields]="['cendie.identifier.normativa']"
+      [label]="'item.page.identifier-normativa'">
+    </ds-generic-item-page-field>
+    <ds-generic-item-page-field [item]="object"
+      [fields]="['dc.relation.ispartof']"
+      [label]="'item.page.ispartof'">
+    </ds-generic-item-page-field>
+    <ds-generic-item-page-field [item]="object"
+      [fields]="['cendie.relation.isRelatedWith']"
+      [label]="'item.page.is-related-with'"
+      [urlRegex]="'^(https?:\\/\\/)?(www\\.)?[A-Za-z0-9.-]+\\.[A-Za-z]{2,}(/.*)?$'">
+    </ds-generic-item-page-field>
+    <ds-item-page-uri-field [item]="object"
+      [fields]="['dc.relation.external']"
+      [label]="'item.page.external'">
+    </ds-item-page-uri-field>
     <ds-item-page-collections [item]="object"></ds-item-page-collections>
-    <ds-item-page-uri-field [item]="object"
-      [fields]="['coar.notify.endorsedBy']"
-      [label]="'item.page.endorsement'">
-    </ds-item-page-uri-field>
-    <ds-item-page-uri-field [item]="object"
-      [fields]="['datacite.relation.isReviewedBy']"
-      [label]="'item.page.review'">
-    </ds-item-page-uri-field>
-    <ds-item-page-uri-field [item]="object"
-      [fields]="['datacite.relation.isSupplementedBy']"
-      [label]="'item.page.supplemented'">
-    </ds-item-page-uri-field>
-    <ds-item-page-uri-field [item]="object"
-      [fields]="['datacite.relation.isReferencedBy']"
-      [label]="'item.page.referenced'">
-    </ds-item-page-uri-field>
     <ds-item-page-cc-license-field [item]="object" [variant]="'full'">
     </ds-item-page-cc-license-field>
     <div>
