@@ -30,12 +30,20 @@
     gap: 2rem;
     max-width: 1300px;
     margin: 0 auto;
+
+    @media screen and (max-width: map-get($grid-breakpoints, md)) {
+      gap: 1rem;
+    }
   }
 
   &__nav {
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
+
+    @media screen and (max-width: map-get($grid-breakpoints, md)) {
+      display: none;
+    }
 
     .nav-link {
       color: #ffffff;
@@ -77,6 +85,20 @@
   }
 
   &__contact {
+    .mobile-contact {
+      display: none;
+    }
+
+    @media screen and (max-width: map-get($grid-breakpoints, md)) {
+      .desktop-contact {
+        display: none;
+      }
+
+      .mobile-contact {
+        display: block;
+      }
+    }
+
     h4 {
       font-weight: 700;
       margin: 0;
